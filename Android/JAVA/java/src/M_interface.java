@@ -14,6 +14,9 @@ interface Math{
     static int diff(int a, int b){ // only static method declaration is allowed because it not refers any instance of class which implement this interface
         return 1;
     }
+    default void doSomething(){ // default method is allowed
+        System.out.println("Interfaces Default message");
+    }
     int mul(int a , int b);
     int div(int a, int b);
 }
@@ -71,12 +74,24 @@ public class M_interface extends ToExtendDemo implements Math,Math2, Math2.Math2
         return 0;
     }
 
+    @Override
+    public void doSomething() {
+        System.out.println("okkkk");
+    }
+
     interface Hello{ // interface in class, it can't be private
         void sayHello();
         void greeting();
     }
     public static void main(String[] args) {
         Math.diff(6,3);
+
+        M_interface m = new M_interface();
+        m.doSomething();
+
+
+        Math math = new M_interface(); // Method dispatching
+
     }
 }
 

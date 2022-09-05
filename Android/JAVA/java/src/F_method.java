@@ -29,8 +29,8 @@ public class F_method {
 
 
     public int diff(int a, int b){
-        int dff = diff(b, a); // static method is allowed to class in non-static method
-        System.out.println("diff" + dff);
+        int dff = sum(b, a); // static method is allowed to class in non-static method
+        System.out.println("sum" + dff);
         return a-b;
     }
 

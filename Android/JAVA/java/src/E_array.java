@@ -66,6 +66,8 @@ public class E_array {
         int v = Arrays.binarySearch(arr,1, 5,7); // return the index of value in array if found in range else if found out of the range then return negative of that index else return return negative arr.length
         System.out.println(v);
         String st = Arrays.toString(arr); // return array as string;
+        Arrays.fill(arr, 5); // fill the whole array with given value
+
 
         // Many more arrays nethod
 

@@ -31,7 +31,7 @@ public class B_conditionals {
         // enhance switch statement
         // this not require the break
         switch (a){
-            case 10 -> System.out.println("You are eligible");
+            case 10,40 -> System.out.println("You are eligible");
             case 18 -> System.out.println("You are not eligible");
             default -> System.out.println("You are may or may not eligible");
         }

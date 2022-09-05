@@ -43,7 +43,7 @@ public class H_inheritance {
         }
         public void print_derived() { System.out.println("Derived method"); }
 
-        @Override
+        @Override // this is known as annotation which is used to provide additional information there is lots of annotation like @Deprecated, @Inherited, @Target, @SafeVarArgs and many more
         public void overloading() {
             super.overloading(); // to call derived class method
             System.out.println("overrided in derived class");
@@ -55,6 +55,12 @@ public class H_inheritance {
         g.print_base();
         g.print_derived();
         g.print_base();
+
+// reference-variable = object of derived class
+        Base base     = new Derived(); // this concept is known as the Dynamic Method Dispatch, this is very useful in collections framework
+        // Here we create object of Derived class using reference of base class
+        // if base and derived class has method with same name or override, and then if that method is called then derived class method is called and execute otherwise base class method is called and execute normally and other method which is specific to derived class will not accessible
+
     }
 }
 
