@@ -6,3 +6,4 @@ React Native
 out
 *.iml
 .env
+.\kotlin\src\test
