@@ -1,4 +1,4 @@
-import kotlin.reflect.typeOf
+import kotlin.reflect.typeOf // import always at top
 
 class Box<T>(t: T) {
     var value = t  // A field of "some type"
@@ -58,10 +58,23 @@ fun <T : Book> sortByDate(list: List<T>) {  }
 
 // Multiple type bounds
 interface Watchable<T>{}
-
 // funtion type bound
 fun <T> sortByDate2(list: List<T>)where T : Book2, T : Watchable<T> {}
 
+
+
+// typealias -> nested and local type aliases are not supported
+class ClassWithVeryLongName{}
+typealias SomeClass = ClassWithVeryLongName
+
+typealias Password = String
+val myPassword: Password = "hyperskill"
+
+typealias B<T> = Box<T> // with generics
+typealias FileTable = MutableMap<Int, MutableList<String>>
+
+// importing with alias
+    //import ThirdClass as Kitten
 
 fun main() {
     val obj1: Box<Int> = Box<Int>(123)
@@ -80,4 +93,10 @@ fun main() {
     val storage1 = Storage<Book2>()
     val storage2 = Storage<Magazine>()
 //    val storage3 = Storage<Stone>() // error because
+
+    // import alias
+
 }
+
+
+// working with files and exception handling is same as java

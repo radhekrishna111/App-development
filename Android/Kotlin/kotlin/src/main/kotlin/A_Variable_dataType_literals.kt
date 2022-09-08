@@ -145,6 +145,12 @@ fun main(){
     val nullString : String? = null // to make nullable
     println(nullString?.length) // working with nullables
     println(nullString!!.length) // working with nullables
+
+
+    // elvis operator  ->  if the left-hand side of the expression (name?.length) is not null, return it; otherwise, the right-hand side You can also use return and throw expressions
+    val length: Int = name?.length ?: throw Exception("The name is null")
+
+    
 }
 
 
