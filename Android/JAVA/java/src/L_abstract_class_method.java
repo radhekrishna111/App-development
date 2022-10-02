@@ -9,7 +9,7 @@ package JAVA_DSA;
 //  No final abstract method
 //  but there can be final method
 //  we can define static method in abstract class
-//  we can define static abstract method because static method can't override
+//  we can't define static abstract method because static method can't override
 //  nested abstract class allowed
 //  abstract class contain normal method to
 //  we can't make any abstract method private
