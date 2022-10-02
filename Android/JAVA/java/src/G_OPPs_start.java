@@ -16,8 +16,8 @@ import java.util.List;
             //note ** Multiple Inheritance not allowed in java because of the of change of ambiguity due to two member in different class has same name
                     // because of the  Multiple Inheritance not allowed hybrid inheritance is also not possible
 //        Polymorphism = Ability to differentiate between entities of same name with help of signature and declaration of these entities
-                //Method overloading = when a method is inherited from another class is change and change is body, it decided at run-time
-                //Method overriding = method with same name but different signature , at compile-time
+                //Method overloading = when a method is inherited from another class is change and change is body,at compile-time 
+                //Method overriding = method with same name but different signature , it decided at run-time
 // Some important topic
     // Coupling = Coupling refers to the knowledge or information or dependency of another class, classes are aware of each other
             // Tight Coupling = Tight coupling means the two classes often change together, More interdependency between class, More coordination , More information flow
